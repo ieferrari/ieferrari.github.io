@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de ladrillos</title>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+</head>
+<body>
+  <section id="calculadora">
+
+    <div>
+
+      <p>
+        <label for="metros_pared">Metros de pared (m) </label>
+        <input type="number" id="metros_pared" name="metros_pared_" min="1" value="10" >
+      </p>
+      <p>
+        <label for="altura_pared">Altura de la pared (cm)</label>
+        <input type="number" id="altura_pared" name="altura_pared_" min="1" value="220" >
+      </p>
+
+      <p>
+        <label for="separacion_vertical">Separación vertical  (mm)</label>
+        <input type="number" id="separacion_vertical" name="separacion_vertical_" min="1" value="15" >
+      </p>
+      <p>
+        <label for="separacion_horizontal">   Horizontal (mm)</label>
+        <input type="number" id="separacion_horizontal" name="separacion_horizontal_" min="1" value="15" >
+        (recomendado desde 10 hasta 15 mm)
+      </p>
+
+      <p>
+        <label for="ancho_ladrillo">Ancho del ladrillo (cm)</label>
+        <input type="number" id="ancho_ladrillo" name="ancho_ladrillo_" value="25" />
+      </p>
+      <p>
+        <label for="alto_ladrillo">Alto (cm)</label>
+        <input type="number" id="alto_ladrillo" name="alto_ladrillo_" value="10" />
+      </p>
+
+      <p>
+        <label for="factor_extra">Factor extra %</label>
+        <input type="number" id="factor_extra" name="factor_extra_" value="10" />
+      </p>
+
+      <p>
+        <label for="compra_minima">Compra mínima</label>
+        <input type="number" id="compra_minima" name="compra_minima_" value="50" />
+      </p>
+
+      <button type="button"  name="submitButton" onclick="calcular()" >Calcular</button>
+    </div>
+
+    <div>
+      <p>
+        total de ladrillos calculado
+        <b id="resultado"></b>
+      </p>
+      <p>
+        compra sugerida (ajustado por compra mínima)
+        <b id="total_sug"></b>
+      </p>
+    </div>
+
+  </section>
+
+  <div id="root"></div>
+  <script src="calculadora.js" type="text/javascript"></script>
+
+
+  <div>
+
+<img src="https://www.clipartmax.com/png/small/199-1999806_brick-wall-vector-firewall-svg-icon.png" alt="Brick Wall Vector - Firewall Svg Icon @clipartmax.com">
+
+
+  </div>
+</body>
+</html>
